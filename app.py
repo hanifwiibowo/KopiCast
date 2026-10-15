@@ -380,6 +380,28 @@ st.markdown('<div class="judul-kecil">Dashboard Peramalan · LSTM berbasis Atten
             unsafe_allow_html=True)
 st.title('Peramalan Harga Kontrak Berjangka Kopi')
 
+with st.expander('Cara menggunakan dashboard'):
+    st.markdown("""
+**Melihat hasil peramalan**
+1. Pilih kontrak **Arabika** atau **Robusta** di bawah judul.
+2. Geser *slider* horizon untuk menentukan berapa hari perdagangan ke depan yang ingin dilihat (1 sampai 30 hari).
+3. Baca empat kartu ringkasan: harga terakhir, hasil peramalan dan arahnya, kisaran harga yang mungkin terjadi, serta akurasi model.
+4. Lihat grafik. Garis biru adalah harga aktual, garis oranye putus-putus adalah hasil peramalan, dan area oranye muda adalah kisaran harga dengan tingkat keyakinan 95%. Pilih periode di atas grafik untuk memperpendek atau memperpanjang data historis yang ditampilkan.
+5. Buka tab di bawah grafik untuk melihat tabel peramalan (bisa diunduh), grafik *candlestick*, kinerja model, dan penjelasan model.
+
+**Menambahkan data terbaru** (sidebar, langkah ①)
+1. Klik tautan Investing.com di sidebar, atur rentang tanggal mulai dari 28 Juli 2026, lalu unduh data harian dalam format CSV.
+2. Unggah berkas tersebut. Peramalan otomatis dihitung ulang dari tanggal data terakhir, dan muncul kotak yang membandingkan peramalan awal dengan harga aktual.
+3. Klik **Hapus data unggahan** untuk kembali ke data awal.
+
+**Melatih ulang model** (sidebar, langkah ②)
+1. Pilih rentang tanggal data, minimal 1 tahun. Perkiraan waktu proses ditampilkan di bawahnya.
+2. Klik **Latih Ulang Model** dan tunggu hingga selesai.
+3. Hasilnya muncul sebagai garis hijau pada grafik dan sebagai perbandingan metrik pada tab Kinerja model.
+
+Klik **›** di pojok kiri atas jika sidebar tidak terlihat.
+""")
+
 c_k, c_h = st.columns([1, 2], gap='large')
 with c_k:
     try:
