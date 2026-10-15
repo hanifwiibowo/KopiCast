@@ -1,5 +1,5 @@
 streamlit>=1.40
-tensorflow==2.21.0
+tensorflow-cpu==2.21.0
 keras==3.15.1
 plotly>=5.20
 pandas
