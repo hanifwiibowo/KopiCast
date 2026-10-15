@@ -1,0 +1,14 @@
+{
+  "ret_scale": 0.08082609644658707,
+  "vol_mean": 7.790783028710795,
+  "vol_std": 3.1466366919862723,
+  "features": [
+    "Close",
+    "Open",
+    "High",
+    "Low",
+    "Volume"
+  ],
+  "model": "refit seluruh data 2009-27 Juli 2026",
+  "representation": "relative_to_last_close"
+}

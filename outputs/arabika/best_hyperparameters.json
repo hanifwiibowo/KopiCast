@@ -1,0 +1,10 @@
+{
+  "sliding_window": 60,
+  "hidden_layers": 2,
+  "lstm_units": 225,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "dropout": 0.2,
+  "horizon": 30,
+  "final_epochs": 22
+}
